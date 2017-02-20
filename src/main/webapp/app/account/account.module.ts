@@ -22,7 +22,7 @@ import {
 @NgModule({
     imports: [
         LazySharedModule,
-        RouterModule.forChild(accountState)
+        RouterModule.forRoot(accountState, { useHash: true })
     ],
     declarations: [
         ActivateComponent,

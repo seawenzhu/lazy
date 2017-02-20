@@ -267,6 +267,12 @@ amdefine@1.0.0, amdefine@>=0.0.4, amdefine@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.0.tgz#fd17474700cb5cc9c2b709f0be9d23ce3c198c33"
 
+angular-router-loader@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/angular-router-loader/-/angular-router-loader-0.4.0.tgz#06266d4f314b00161970f8e24af31cb0ca07dcbb"
+  dependencies:
+    loader-utils "^0.2.15"
+
 angular2-cookie@1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/angular2-cookie/-/angular2-cookie-1.2.6.tgz#8fa845531e777adb042fe2f339c0040f6ddbf09d"
@@ -7857,16 +7863,9 @@ write-file-webpack-plugin@3.4.2:
     mkdirp "^0.5.1"
     moment "^2.11.2"
 
-ws@1.1.1:
+ws@1.1.1, ws@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.1.tgz#082ddb6c641e85d4bb451f03d52f06eabdb1f018"
-  dependencies:
-    options ">=0.0.5"
-    ultron "1.0.x"
-
-ws@^1.0.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.2.tgz#8a244fa052401e08c9886cf44a85189e1fd4067f"
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"

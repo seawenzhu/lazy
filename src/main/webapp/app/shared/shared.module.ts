@@ -1,6 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { DatePipe } from '@angular/common';
-
+import { customHttpProvider } from "../blocks/interceptor/http.provider";
 import { CookieService } from 'angular2-cookie/services/cookies.service';
 import {
     LazySharedLibsModule,
@@ -28,6 +28,7 @@ import {
         HasAnyAuthorityDirective
     ],
     providers: [
+        customHttpProvider(),
         CookieService,
         LoginService,
         LoginModalService,

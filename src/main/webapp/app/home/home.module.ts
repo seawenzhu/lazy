@@ -9,7 +9,7 @@ import { HOME_ROUTE, HomeComponent } from './';
 @NgModule({
     imports: [
         LazySharedModule,
-        RouterModule.forRoot([ HOME_ROUTE ], { useHash: true })
+        // RouterModule.forRoot([ HOME_ROUTE ], { useHash: true })
     ],
     declarations: [
         HomeComponent,

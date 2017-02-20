@@ -12,8 +12,8 @@ import { LazyAccountModule } from './account/account.module';
 import { LazyEntityModule } from './entities/entity.module';
 
 import { LayoutRoutingModule } from './layouts';
-import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
+
 
 import {
     JhiMainComponent,
@@ -24,10 +24,11 @@ import {
     ActiveMenuDirective,
     ErrorComponent
 } from './layouts';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     imports: [
+      NgbModule.forRoot(),
         BrowserModule,
         LayoutRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
@@ -49,7 +50,6 @@ import {
         ProfileService,
         { provide: Window, useValue: window },
         { provide: Document, useValue: document },
-        customHttpProvider(),
         PaginationConfig,
         UserRouteAccessService
     ],
